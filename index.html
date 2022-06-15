@@ -1,113 +1,179 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Massively by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="tr">
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa</title>
+    <script src="https://kit.fontawesome.com/ee6d26856a.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>My Portfolio</h1>
-						<p>A showcase of my prıjects and my abilities.</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+<body>
+    <!-- Navbar Section -->
+    <div class="navigation">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping fa-sm"></i></a>
+            <i class="fas fa-bars"></i>
+        </label>
+        <a class="none" href="index.html"><label class="logo">i<span>S</span>ot<span>S</span>tore</label></a>
+        <ul>
+            <li><a class="active" href="index.html">Anasayfa</a></li>
+            <li><a href="stores.html">Örnek Mağaza</a></li>
+            <li><a href="Auth/signin.html">Giriş Yap</a></li>
+            <li><a href="Auth/signup.html">Kayıt Ol</a></li>
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
+        </ul>
+    </div>
+    <!-- Navbar End -->
+    <!-- Navbar Section End -->
+    <!-- Shop Hero Section -->
+    <section class="shop-hero">
+        <div class="container">
+            <div class="row">
+                <div class="shop-hero-main col-md-12 col-lg-6" style="margin-top:200px">
+                    <h1 style="margin-bottom: 30px;">İstediğiniz yerde kolayca satış yapın!</h1>
+                    <p style="color: #8c96a4; margin-bottom: 30px;">iSotStore size, istediğiniz platform üzerinde
+                        çalışan bir alışveriş ve ödeme otomasyonu sunar. Ürünlerinizin satışını iSotStore ile sosyal
+                        medya
+                        hesaplarınızda, kendi internet sitenizde veya çeşitli pazaryerlerinde kolayca yapabilirsiniz.
+                        Hatta bunlardan biri olmasa bile, iSotStore üzerinde hemen bir dükkan açıp satış yapmaya
+                        başlayabilirsiniz!</p>
+                    <div class="row">
+                        <div class="col-12 col-sm-auto"><a class="btn btn-info" style="color: white;"
+                                href="Auth/signup.html">ÜCRETSİZ Üye Ol</a></div>
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Yunus Elçi</a>
-					</header>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-6 shop-hero-image"><img src="Images/main-illustration.png"
+                        alt="Main Illustration"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Shop Hero Section End -->
+    <!-- Store Front Section -->
+    <section class="store-front">
+        <div class="container">
+            <div>
+                <h3>Size Özel Dükkan</h3>
+                <p>Kendi dükkanınızı oluşturup hemen satışa başlayabilirsiniz!</p>
+                <img style="margin-top: 30px;" src="Images/storeFront.png" height="282px" width="444px">
+                <button onclick="window.location='stores.html';" type="button" style="color: white;" class="btn btn-info">Örnek Dükkanı İncele</button>
+            </div>
+            <div>
+                <div>
+                    <h3>Üyelik veya aylık kullanım ücreti ödemeyin
+                    </h3>
+                    <p>iSotStore üyeliğinizi ücretsiz oluşturun, size özel dükkanınızı aylık bir ücret ödemeden hemen
+                        kullanmaya başlayın.
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Yunus Elçi</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://twitter.com/proelci" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="https://www.linkedin.com/in/proelc/" class="icon brands fa-linkedin"><span class="label">Linked-IN</span></a></li>
-							<li><a href="https://github.com/yunuselci" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+                    </p>
+                </div>
+                <div style="margin-top: 30px;">
+                    <h3>Dükkanınızı özelleştirin
+                    </h3>
+                    <p>iSotStore dükkanınıza kendi logonuzu, dükkan görsellerinizi, dükkanınızla ilgili tanıtıcı
+                        bilgileri
+                        kaydedin.
 
-				<!-- Main -->
-					<div id="main">
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<p>while ( ! ( succeed = try() ) ) ;</p>
-								</header>
-								<a href="#" class="image main"><img src="images/4.jpg" alt="" /></a>
-								<ul class="actions special">
-								</ul>
-							</article>
+                    </p>
+                </div>
+                <div style="margin-top: 30px;">
+                    <h3>Ürünlerinizi listeleyin
+                    </h3>
+                    <p>Satışa sunacağınız ürünlerinizi listeleyip dükkan sayfanızın içeriğini oluşturmaya başlayın.
 
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<h2><a href="https://github.com/yunuselci/WhiteBoard-Application">White Board<br />
-										Application</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/2.png" alt="" /></a>
-									<p>Java p2p WhiteBoard Application</p>
-								</article>
-								<article>
-									<header>
-										<h2><a href="#">Traveling Salesman Problem<br />
-											Visual</a></h2>
-									</header>
-									<a href="https://github.com/yunuselci/TravelingSalesmanProblem-Visual" class="image fit"><img src="images/3.png" alt="" /></a>
-									<p>This project solves the traveling salesman problem with 3 different approaches.</p>
-								</article>
-							</section>
+                    </p>
+                </div>
+                <div style="margin-top: 30px;">
+                    <h3>Satışa hazırsınız
+                    </h3>
+                    <p>Artık satışa hazırsınız! Müşterileriniz dükkan linkinizi ister bilgisayarlarından ister mobil
+                        cihazlarından ziyaret edip dükkanınızdan sipariş vermeye başlayabilirler.
 
-			
+                    </p>
+                </div>
 
-					</div>
+            </div>
+        </div>
+    </section>
+    <!-- Store Front Section End -->
+    <!-- Store Banner Section -->
+    <section class="store-banner">
+        <div class="container">
+            <div>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section class="split contact">
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://twitter.com/proelci" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="https://www.linkedin.com/in/proelc/" class="icon brands alt fa-instagram"><span class="label">Linked-IN</span></a></li>
-									<li><a href="https://github.com/yunuselci" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
+            </div>
+            <div class="col-md-6 col-lg-5">
+                <h2>iSotStore ile takipçilerinizi müşterilerinize dönüştürmek ister misiniz?</h2>
+                <button onclick="window.location='stores.html';" type="button" style="color: white;" class="btn btn-info">Örnek Dükkanı İncele</button>
+            </div>
+        </div>
+    </section>
+    <!-- Store Banner Section End -->
+    <!-- Footer Section -->
+    <div class="footer-section">
+        <footer>
+            <div class="container">
+                <div class="section about">
+                    <h2>Hakkımızda</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia perspiciatis reprehenderit totam.
+                        Fugit consequuntur nostrum voluptates voluptatibus explicabo excepturi culpa. Illo soluta ex
+                        minima eaque perspiciatis, temporibus illum tempore voluptatem.</p>
+                    <ul class="social-media">
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+                <div class="section quick-links">
+                    <h2>Site Haritası</h2>
+                    <ul>
+                        <li><a href="index.html">Anasayfa</a></li>
+                        <li><a href="stores.html">Örnek Mağaza</a></li>
+                        <li><a href="product.html">Örnek Ürün</a></li>
+                        <li><a href="cart.html">Sepet</a></li>
+                        <li><a href="Auth/signin.html">Giriş Yap</a></li>
+                        <li><a href="Auth/signup.html">Kayıt Ol</a></li>
+                    </ul>
+                </div>
+                <div class="section contact">
+                    <h2>İletişim bilgileri</h2>
+                    <ul class="info">
+                        <li>
+                            <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                            <span>Yılanlı Ayazma <br>
+                                İstanbul, TR 34010, <br>Türkiye
+                            </span>
+                        </li>
+                        <li>
+                            <span><i class="fa-solid fa-phone" aria-hidden="true"></i></span>
+                            <p><a href="tel:5383905209">+90 538 567 8900</a><br>
+                                <a href="tel:5383905209">+90 538 567 8900</a>
+                            </p>
+                        </li>
+                        <li>
+                            <span><i class="fa-solid fa-envelope" aria-hidden="true"></i></span>
+                            <p><a href="mailto:yunus@gmail.com">yunus@gmail.com</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <div class="copygright-text">
+            <p>© 2022 iSotStore</p>
+        </div>
+    </div>
+    <!-- Footer Section End-->
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
 
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
 </html>
