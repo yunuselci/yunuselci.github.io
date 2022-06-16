@@ -53,7 +53,7 @@ a {
     text-transform: uppercase;
 }
 
-.navigation .none.active,.none:hover{
+.navigation .none.active, .none:hover {
     background: #f7fbfa;
 }
 
@@ -91,20 +91,20 @@ a:hover {
     margin-bottom: 100px;
 }
 
-.store-front .container>div {
+.store-front .container > div {
     position: relative;
     margin: 50px;
 }
 
-.store-front .container>div p {
+.store-front .container > div p {
     color: #8c96a4;
 }
 
-.store-front .container>div h3 {
+.store-front .container > div h3 {
     font-size: 1.5rem;
 }
 
-.store-front .container>div>button {
+.store-front .container > div > button {
     position: absolute;
     top: 100%;
     left: 50%;
@@ -127,11 +127,11 @@ a:hover {
     padding: 96px 15px 96px 15px;
 }
 
-.store-banner .container>div {
+.store-banner .container > div {
     color: white;
 }
 
-.store-banner .container>div>button {
+.store-banner .container > div > button {
     margin-top: 30px;
 }
 
@@ -283,7 +283,7 @@ footer p {
     font-weight: 500;
 }
 
-.copygright-text>p {
+.copygright-text > p {
     margin: 0;
 
 }
@@ -405,24 +405,24 @@ footer p {
     justify-content: center;
 }
 
-.example-store-front .container>div {
+.example-store-front .container > div {
     position: relative;
     margin: 50px;
 }
 
-.example-store-front .container>div p {
+.example-store-front .container > div p {
     color: #8c96a4;
 }
 
-.example-store-front .container>div h3 {
+.example-store-front .container > div h3 {
     font-size: 1.5rem;
 }
 
-.store-info>li>p {
+.store-info > li > p {
     display: inline;
 }
 
-.store-info>li {
+.store-info > li {
     margin-bottom: 5px;
 }
 
@@ -737,7 +737,6 @@ footer p {
 }
 
 
-
 @media (max-width: 952px) {
     .box-container {
         margin: 0;
@@ -784,12 +783,12 @@ footer p {
         display: block;
     }
 
-    .store-front .container>div>img {
+    .store-front .container > div > img {
         width: 100%;
         height: 100%;
     }
 
-    .store-front .container>div>button {
+    .store-front .container > div > button {
         margin-top: 20px;
         width: 100%;
     }
@@ -802,7 +801,7 @@ footer p {
         display: block;
     }
 
-    .example-store-front .container>div>img {
+    .example-store-front .container > div > img {
         width: 100%;
         height: 100%;
     }
@@ -877,7 +876,7 @@ footer p {
         color: #0082e6;
     }
 
-    .navigation #check:checked~ul {
+    .navigation #check:checked ~ ul {
         left: 0;
     }
 
@@ -885,5 +884,15 @@ footer p {
     .btn-groups button {
         width: 100%;
         margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 390px) {
+    .navigation label.logo {
+        padding: 0 20px;
+    }
+
+    .btn-area {
+        padding: 5px 5px;
     }
 }
