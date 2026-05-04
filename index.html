@@ -1,13 +1,18 @@
 <!doctype html>
-<html lang="en">
+<html lang="tr">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta name="description" content="">
-        <meta name="author" content="">
+        <meta name="description" content="Dr. Metin Demir Kliniği - Alanya Mahmutlar'da estetik, longevity (uzun ve sağlıklı yaşam) ve eklem hastalıkları tedavisi. NAD+, Myers Cocktail, kök hücre, exozom, mezoterapi, botoks, dolgu, ozon tedavisi ve daha fazlası.">
+        <meta name="keywords" content="Dr. Metin Demir, longevity, NAD, Myers Cocktail, kök hücre, exozom, mezoterapi, botoks, dolgu, ozon tedavisi, hacamat, fıtık tedavisi, saç dökülmesi, Alanya, Mahmutlar">
+        <meta name="author" content="Dr. Metin Demir">
 
-        <title>Dr. Metin Demir</title>
+        <meta property="og:title" content="Dr. Metin Demir Kliniği | Estetik · Longevity · Eklem Sağlığı">
+        <meta property="og:description" content="Bilimsel ve doğal yöntemlerle estetik, sağlıklı yaşlanma ve eklem hastalıkları tedavisi. Alanya / Mahmutlar.">
+        <meta property="og:type" content="website">
+
+        <title>Dr. Metin Demir Kliniği | Estetik · Longevity · Eklem Sağlığı</title>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         
@@ -29,8 +34,42 @@
         <link href="css/style.css" rel="stylesheet">
 
         <!-- Icon Font Stylesheet -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <style>
+            .whatsapp-float {
+                position: fixed;
+                bottom: 24px;
+                right: 24px;
+                background: #25d366;
+                color: #fff;
+                width: 56px;
+                height: 56px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 28px;
+                box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+                z-index: 1000;
+                transition: transform .25s ease;
+                text-decoration: none;
+            }
+            .whatsapp-float:hover { transform: scale(1.08); color: #fff; }
+
+            #treatments .nav-pills .btn-outline-primary.active,
+            #treatments .nav-pills .btn-outline-primary:hover {
+                background-color: var(--bs-primary, #16accc);
+                color: #fff;
+                border-color: var(--bs-primary, #16accc);
+            }
+            #treatments .service-item h5 { font-weight: 600; }
+            #treatments .service-item { transition: .35s; }
+            #treatments .service-item:hover { transform: translateY(-4px); }
+
+            #services .service-item ul li { line-height: 1.9; }
+        </style>
     </head>
     
     <body id="top">
@@ -41,7 +80,7 @@
                 <div class="container">
                     <a class="navbar-brand mx-auto d-lg-none" href="index.html">
                         Dr. Metin Demir
-                        <strong class="d-block">Sağlık Doktoru</strong>
+                        <strong class="d-block">Estetik · Longevity · Eklem Sağlığı</strong>
                     </a>
 
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,8 +103,12 @@
 
                             <a class="navbar-brand d-none d-lg-block" href="index.html">
                                 Dr. Metin Demir
-                                <strong class="d-block">Sağlık Doktoru</strong>
+                                <strong class="d-block">Estetik · Longevity · Eklem Sağlığı</strong>
                             </a>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#treatments">Tedaviler</a>
+                            </li>
 
                             <li class="nav-item">
                                 <a class="nav-link" href="#reviews">Yorumlar</a>
@@ -111,17 +154,17 @@
                                     Daha iyi
                                     <div class="animated-info">
                                         <span class="animated-item">sağlık</span>
-                                        <span class="animated-item">günler</span>
+                                        <span class="animated-item">estetik</span>
                                         <span class="animated-item">yaşamlar</span>
                                     </div>
                                 </h1>
 
-                                <p class="mb-4">Doğal ve bilimsel yöntemlerle genç ve sağlıklı kalın! Alternatif tıp, mezoterapi, botoks ve longevity uygulamalarımızla yenilenin.</p>
+                                <p class="mb-4">Bilimsel temelli estetik uygulamalar, hücresel düzeyde yenilenme sağlayan longevity tedavileri ve eklem-spor yaralanmalarında etkili çözümler. 17 yıllık tecrübeyle Alanya / Mahmutlar'da yanınızdayız.</p>
 
                                 <div class="heroLinks d-flex flex-wrap align-items-center">
-                                    <a class="custom-link me-4" href="#about" data-hover="Tıklayın">Fazlası</a>
+                                    <a class="custom-link me-4" href="#services" data-hover="Tıklayın">Hizmetlerimiz</a>
 
-                                    <p class="contact-phone mb-0"><i class="bi-phone"></i> +90 (534) </p>
+                                    <p class="contact-phone mb-0"><i class="bi-phone"></i> +90 (534) 364 66 83</p>
                                 </div>
                             </div>
                         </div>
@@ -137,9 +180,9 @@
                         <div class="col-lg-6 col-md-6 col-12">
                             <h2 class="mb-lg-3 mb-3">Dr. Metin Demir Kimdir?</h2>
 
-                            <p>Klinik olarak, alternatif tıp ve sağlıklı yaşlanma alanında bilimsel ve yenilikçi tedaviler sunuyoruz. Mezoterapi, botoks, rejeneratif tıp, el gençleştirme, C vitamini ve demir serumları gibi uygulamalarla doğal güzelliğinizi ve sağlığınızı destekliyoruz. </p>
+                            <p>Dr. Metin Demir, 17 yılı aşkın klinik tecrübesiyle <strong>estetik tıp</strong>, <strong>longevity (uzun ve sağlıklı yaşam)</strong> ve <strong>eklem-kas iskelet sistemi</strong> hastalıklarının tedavisinde uzmanlaşmış bir hekimdir. Kanıta dayalı tıp ile bütüncül yaklaşımı birleştirerek, her hastaya özel tedavi planları hazırlar.</p>
 
-                            <p>Longevity (uzun ve sağlıklı yaşam) odaklı tedavilerimizle, genç ve dinç kalmanıza yardımcı oluyoruz. Güvenilir, etkili ve kişiye özel yaklaşımlarımızla, sağlığınızı ve yaşam kalitenizi en üst seviyeye çıkarmak için buradayız.</p>
+                            <p>Kliniğimizde NAD+, Myers Cocktail, yüksek doz C vitamini, kök hücre ve exozom gibi <strong>rejeneratif tedaviler</strong>; botoks, dolgu, fransız askılama gibi <strong>medikal estetik uygulamalar</strong>; bel-boyun fıtığı, donuk omuz, diz ve dirsek hastalıklarına yönelik <strong>non-invaziv tedaviler</strong> sunulmaktadır. Hijyen, güvenlik ve hasta memnuniyeti önceliğimizdir.</p>
                         </div>
 
                         <div class="col-lg-4 col-md-5 col-12 mx-auto">
@@ -171,72 +214,274 @@
             <section class="section-padding pb-0" id="services">
                 <div class="container-xxl py-5">
                     <div class="container">
-                        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                            <p class="d-inline-block border rounded-pill py-1 px-4">Hizmetlerimiz</p>
-                            <h1>Sağlık Hizmetleri Çözümleri</h1>
+                        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 700px;">
+                            <p class="d-inline-block border rounded-pill py-1 px-4">Uzmanlık Alanlarımız</p>
+                            <h1>Üç Ana Başlıkta Bütüncül Sağlık</h1>
+                            <p class="text-muted mt-3">Estetik, longevity ve eklem-spor yaralanmaları alanlarında bilimsel temelli, kişiye özel tedavi protokolleri sunuyoruz.</p>
                         </div>
                         <div class="row g-4">
                             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                                 <div class="service-item bg-light rounded h-100 p-5">
                                     <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
-                                        <i class="fa fa-syringe text-primary fs-4"></i>
+                                        <i class="fas fa-spa text-primary fs-4"></i>
                                     </div>
-                                    <h4 class="mb-3">Botoks Uygulamaları</h4>
-                                    <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-                                    <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
+                                    <h4 class="mb-3">Estetik</h4>
+                                    <p class="mb-4">Botoks, dolgu, mezoterapi, fransız askılama ve bölgesel inceltme gibi medikal estetik uygulamalarla doğal görünümü koruyarak gençleşmenizi sağlıyoruz.</p>
+                                    <ul class="list-unstyled small text-muted mb-4">
+                                        <li><i class="fas fa-check text-primary me-2"></i>Botoks ve migren botoksu</li>
+                                        <li><i class="fas fa-check text-primary me-2"></i>Yüz, dudak, çene hattı dolguları</li>
+                                        <li><i class="fas fa-check text-primary me-2"></i>Fransız askılama (sarkma tedavisi)</li>
+                                        <li><i class="fas fa-check text-primary me-2"></i>Saç dökülmesi tedavisi</li>
+                                    </ul>
+                                    <a class="btn" href="#treatments"><i class="fas fa-plus text-primary me-3"></i>Detaylar</a>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                                 <div class="service-item bg-light rounded h-100 p-5">
                                     <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
-                                        <i class="fa fa-smile text-primary fs-4"></i>
-                                    </div>
-                                    <h4 class="mb-3">Dolgu Uygulamaları</h4>
-                                    <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-                                    <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                                <div class="service-item bg-light rounded h-100 p-5">
-                                    <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
-                                        <i class="fa fa-seedling text-primary fs-4"></i>
+                                        <i class="fas fa-seedling text-primary fs-4"></i>
                                     </div>
                                     <h4 class="mb-3">Longevity</h4>
-                                    <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-                                    <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                                <div class="service-item bg-light rounded h-100 p-5">
-                                    <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
-                                        <i class="fa fa-syringe text-primary fs-4"></i>
-                                    </div>
-                                    <h4 class="mb-3">Mezoterapi Uygulamaları</h4>
-                                    <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-                                    <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                                <div class="service-item bg-light rounded h-100 p-5">
-                                    <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
-                                        <i class="fa fa-spa text-primary fs-4"></i>
-                                    </div>
-                                    <h4 class="mb-3">Cilt Sorunları ve Tedavileri</h4>
-                                    <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-                                    <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
+                                    <p class="mb-4">Hücresel düzeyde yenilenmeyi destekleyen NAD+, Myers Cocktail, kök hücre ve exozom uygulamalarıyla biyolojik yaşınızı kontrol altına alın.</p>
+                                    <ul class="list-unstyled small text-muted mb-4">
+                                        <li><i class="fas fa-check text-primary me-2"></i>NAD+ ve Myers Cocktail IV</li>
+                                        <li><i class="fas fa-check text-primary me-2"></i>Kök hücre &amp; exozom tedavisi</li>
+                                        <li><i class="fas fa-check text-primary me-2"></i>Yüksek doz C vitamini, glutatyon</li>
+                                        <li><i class="fas fa-check text-primary me-2"></i>Resveratrol, kurkumin, karnozin, L-arginin</li>
+                                    </ul>
+                                    <a class="btn" href="#treatments"><i class="fas fa-plus text-primary me-3"></i>Detaylar</a>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                                 <div class="service-item bg-light rounded h-100 p-5">
                                     <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
-                                        <i class="fa fa-leaf text-primary fs-4"></i>
+                                        <i class="fas fa-bone text-primary fs-4"></i>
                                     </div>
-                                    <h4 class="mb-3">El Dokusu Gençleştirme</h4>
-                                    <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-                                    <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
+                                    <h4 class="mb-3">Eklem &amp; Spor Yaralanmaları</h4>
+                                    <p class="mb-4">Bel-boyun fıtığı, donuk omuz, diz ve dirsek rahatsızlıkları ile fibromiyalji ve kronik ağrılarda ameliyatsız, etkili tedavi seçenekleri.</p>
+                                    <ul class="list-unstyled small text-muted mb-4">
+                                        <li><i class="fas fa-check text-primary me-2"></i>Bel ve boyun fıtığı tedavisi</li>
+                                        <li><i class="fas fa-check text-primary me-2"></i>Donuk omuz, diz, dirsek hastalıkları</li>
+                                        <li><i class="fas fa-check text-primary me-2"></i>Fibromiyalji ve kronik ağrı</li>
+                                        <li><i class="fas fa-check text-primary me-2"></i>Ozon tedavisi, hacamat, mezoterapi</li>
+                                    </ul>
+                                    <a class="btn" href="#treatments"><i class="fas fa-plus text-primary me-3"></i>Detaylar</a>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-padding" id="treatments">
+                <div class="container">
+                    <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+                        <p class="d-inline-block border rounded-pill py-1 px-4">Tedavi Detayları</p>
+                        <h2>Sunduğumuz Tüm Tedaviler</h2>
+                        <p class="text-muted mt-3">Her bir uygulama, alanında uzman hekim tarafından, hijyenik ve güvenli klinik ortamında yapılmaktadır.</p>
+                    </div>
+
+                    <ul class="nav nav-pills justify-content-center mb-5" id="treatmentsTab" role="tablist">
+                        <li class="nav-item mx-2 mb-2" role="presentation">
+                            <button class="btn btn-outline-primary active" id="aesthetic-tab" data-bs-toggle="pill" data-bs-target="#aesthetic" type="button" role="tab">
+                                <i class="fas fa-spa me-2"></i>Estetik
+                            </button>
+                        </li>
+                        <li class="nav-item mx-2 mb-2" role="presentation">
+                            <button class="btn btn-outline-primary" id="longevity-tab" data-bs-toggle="pill" data-bs-target="#longevity" type="button" role="tab">
+                                <i class="fas fa-seedling me-2"></i>Longevity
+                            </button>
+                        </li>
+                        <li class="nav-item mx-2 mb-2" role="presentation">
+                            <button class="btn btn-outline-primary" id="joint-tab" data-bs-toggle="pill" data-bs-target="#joint" type="button" role="tab">
+                                <i class="fas fa-bone me-2"></i>Eklem &amp; Spor
+                            </button>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="treatmentsTabContent">
+
+                        <div class="tab-pane fade show active" id="aesthetic" role="tabpanel">
+                            <div class="row g-4">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="service-item bg-light rounded h-100 p-4">
+                                        <h5 class="mb-3"><i class="fas fa-syringe text-primary me-2"></i>Botoks Uygulamaları</h5>
+                                        <p class="mb-0 small">Mimik çizgileri, alın ve göz çevresi için klasik botoks; kronik migren ataklarını azaltmaya yönelik <strong>migren botoksu</strong>; aşırı terleme ve diş sıkma tedavileri.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="service-item bg-light rounded h-100 p-4">
+                                        <h5 class="mb-3"><i class="fas fa-smile text-primary me-2"></i>Dolgu Uygulamaları</h5>
+                                        <p class="mb-0 small">Şakak, göz altı, burun, dudak, çene ve çene hattı dolguları. Hacim kaybını gidererek doğal ve oranlı bir görünüm elde edilir.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="service-item bg-light rounded h-100 p-4">
+                                        <h5 class="mb-3"><i class="fas fa-hand-sparkles text-primary me-2"></i>El, Dirsek ve Diz Dolguları</h5>
+                                        <p class="mb-0 small">Yaşla incelen cilt dokusunda hacim kaybını gidererek el, dirsek ve dizlerde gençleşme sağlar.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="service-item bg-light rounded h-100 p-4">
+                                        <h5 class="mb-3"><i class="fas fa-leaf text-primary me-2"></i>Bölge Gençleştirme</h5>
+                                        <p class="mb-0 small">Yüz, boyun, dekolte, el, dirsek ve diz bölgelerine özel mezoterapi protokolleri ile cilt yenileme ve aydınlatma.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="service-item bg-light rounded h-100 p-4">
+                                        <h5 class="mb-3"><i class="fas fa-arrows-alt-v text-primary me-2"></i>Fransız Askılama</h5>
+                                        <p class="mb-0 small">Yüz, boyun ve kollardaki sarkmaların ameliyatsız tedavisi. Eriyebilen iplerle dokular yukarı taşınır, kolajen sentezi uyarılır.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="service-item bg-light rounded h-100 p-4">
+                                        <h5 class="mb-3"><i class="fas fa-eye text-primary me-2"></i>Kaş Kaldırma</h5>
+                                        <p class="mb-0 small">Botoks ve ip askı yöntemleriyle düşmüş kaşların yukarı taşınması; bakışların daha genç ve dinamik görünmesi.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="service-item bg-light rounded h-100 p-4">
+                                        <h5 class="mb-3"><i class="fas fa-tint text-primary me-2"></i>Sıvı Yüz Germe</h5>
+                                        <p class="mb-0 small">Yüz, boyun ve diğer alanlarda sarkma ve gevşeklik için ameliyatsız sıvı germe uygulamaları.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="service-item bg-light rounded h-100 p-4">
+                                        <h5 class="mb-3"><i class="fas fa-weight text-primary me-2"></i>Bölgesel İnceltme</h5>
+                                        <p class="mb-0 small">Enzimatik lipoliz ile inatçı yağ bölgelerinde (karın, basen, kol, çene altı) ameliyatsız incelme.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="service-item bg-light rounded h-100 p-4">
+                                        <h5 class="mb-3"><i class="fas fa-cut text-primary me-2"></i>Saç Dökülmesi Tedavisi</h5>
+                                        <p class="mb-0 small">Mezoterapi, PRP ve exozom destekli protokollerle saç köklerinin beslenmesi ve yeni saç çıkışının desteklenmesi.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="longevity" role="tabpanel">
+                            <div class="row g-4">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="service-item bg-light rounded h-100 p-4">
+                                        <h5 class="mb-3"><i class="fas fa-dna text-primary me-2"></i>NAD+ Tedavisi</h5>
+                                        <p class="mb-0 small">Hücresel enerji üretimi ve DNA onarımı için kritik koenzim. Yorgunluk, bilişsel performans düşüşü ve yaşlanma karşıtı protokollerde IV uygulanır.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="service-item bg-light rounded h-100 p-4">
+                                        <h5 class="mb-3"><i class="fas fa-flask text-primary me-2"></i>Myers Cocktail</h5>
+                                        <p class="mb-0 small">B vitaminleri, magnezyum, kalsiyum ve C vitamini içeren özel IV karışım. Bağışıklık desteği ve kronik yorgunlukta etkilidir.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="service-item bg-light rounded h-100 p-4">
+                                        <h5 class="mb-3"><i class="fas fa-lemon text-primary me-2"></i>Yüksek Doz C Vitamini</h5>
+                                        <p class="mb-0 small">Güçlü antioksidan etki, bağışıklık desteği ve kolajen sentezi için yüksek doz IV C vitamini protokolleri.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="service-item bg-light rounded h-100 p-4">
+                                        <h5 class="mb-3"><i class="fas fa-microscope text-primary me-2"></i>Kök Hücre &amp; Exozom</h5>
+                                        <p class="mb-0 small">Rejeneratif tıbbın öncü yöntemleri. Doku onarımı, eklem sağlığı, cilt yenileme ve saç dökülmesinde kullanılır.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="service-item bg-light rounded h-100 p-4">
+                                        <h5 class="mb-3"><i class="fas fa-wine-glass text-primary me-2"></i>Resveratrol</h5>
+                                        <p class="mb-0 small">Sirtuin yolaklarını aktive eden güçlü antioksidan. Kardiyovasküler ve hücresel yaşlanma karşıtı etkileri kanıtlanmıştır.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="service-item bg-light rounded h-100 p-4">
+                                        <h5 class="mb-3"><i class="fas fa-pepper-hot text-primary me-2"></i>Kurkumin</h5>
+                                        <p class="mb-0 small">Anti-inflamatuar ve antioksidan etkisiyle eklem sağlığı, sindirim ve genel iyilik halinde destekleyici tedavi.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="service-item bg-light rounded h-100 p-4">
+                                        <h5 class="mb-3"><i class="fas fa-heart text-primary me-2"></i>Karnozin &amp; L-Arginin</h5>
+                                        <p class="mb-0 small">Kas ve damar sağlığını destekleyen amino asit türevleri; performans, dolaşım ve hücresel koruma protokollerinde kullanılır.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="service-item bg-light rounded h-100 p-4">
+                                        <h5 class="mb-3"><i class="fas fa-wind text-primary me-2"></i>Ozon Tedavisi</h5>
+                                        <p class="mb-0 small">Major ve minor ozon uygulamaları; hücresel oksijenasyonu artırır, bağışıklığı güçlendirir, kronik enfeksiyonlarda destekleyicidir.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="service-item bg-light rounded h-100 p-4">
+                                        <h5 class="mb-3"><i class="fas fa-tint text-primary me-2"></i>Hacamat</h5>
+                                        <p class="mb-0 small">Geleneksel ve tamamlayıcı tıp uygulaması. Mikrosirkülasyonu iyileştirir; baş ağrısı, kas-iskelet ağrıları ve detoks protokollerinde tercih edilir.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="joint" role="tabpanel">
+                            <div class="row g-4">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="service-item bg-light rounded h-100 p-4">
+                                        <h5 class="mb-3"><i class="fas fa-bone text-primary me-2"></i>Bel ve Boyun Fıtığı</h5>
+                                        <p class="mb-0 small">Ameliyatsız tedavi yaklaşımıyla ağrı kontrolü, sinir basısının azaltılması ve fonksiyonel iyileşme. Ozon, mezoterapi ve nöralterapi kombinasyonları.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="service-item bg-light rounded h-100 p-4">
+                                        <h5 class="mb-3"><i class="fas fa-snowflake text-primary me-2"></i>Donuk Omuz</h5>
+                                        <p class="mb-0 small">Adeziv kapsülitin etkili tedavisi: enjeksiyon protokolleri, mezoterapi ve egzersiz reçetesi ile hareket açıklığının yeniden kazanılması.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="service-item bg-light rounded h-100 p-4">
+                                        <h5 class="mb-3"><i class="fas fa-walking text-primary me-2"></i>Diz Hastalıkları</h5>
+                                        <p class="mb-0 small">Osteoartrit (kireçlenme), menisküs ve bağ yaralanmalarında PRP, ozon ve rejeneratif enjeksiyon tedavileri.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="service-item bg-light rounded h-100 p-4">
+                                        <h5 class="mb-3"><i class="fas fa-hand-paper text-primary me-2"></i>Dirsek Hastalıkları</h5>
+                                        <p class="mb-0 small">Tenisçi ve golfçu dirseğinde kanıta dayalı enjeksiyon tedavileri, mezoterapi ve egzersiz programları.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="service-item bg-light rounded h-100 p-4">
+                                        <h5 class="mb-3"><i class="fas fa-running text-primary me-2"></i>Spor Yaralanmaları</h5>
+                                        <p class="mb-0 small">Kas, tendon ve bağ yaralanmalarında hızlı iyileşme için PRP, mezoterapi ve rejeneratif protokoller.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="service-item bg-light rounded h-100 p-4">
+                                        <h5 class="mb-3"><i class="fas fa-bed text-primary me-2"></i>Fibromiyalji</h5>
+                                        <p class="mb-0 small">Yaygın kas ağrısı, uyku bozukluğu ve kronik yorgunluk şikayetlerinde bütüncül tedavi yaklaşımı.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="service-item bg-light rounded h-100 p-4">
+                                        <h5 class="mb-3"><i class="fas fa-battery-quarter text-primary me-2"></i>Genel Halsizlik</h5>
+                                        <p class="mb-0 small">Kronik yorgunluk sendromu ve enerji düşüklüğünde IV vitamin desteği ve longevity protokolleriyle bütüncül yaklaşım.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="service-item bg-light rounded h-100 p-4">
+                                        <h5 class="mb-3"><i class="fas fa-heartbeat text-primary me-2"></i>Kronik Ağrı</h5>
+                                        <p class="mb-0 small">Uzun süreli ağrı durumlarında nöralterapi, ozon, mezoterapi ve hacamat ile çok yönlü tedavi planlaması.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="service-item bg-light rounded h-100 p-4">
+                                        <h5 class="mb-3"><i class="fas fa-wind text-primary me-2"></i>Ozon &amp; Hacamat</h5>
+                                        <p class="mb-0 small">Eklem ve kas-iskelet sistemi rahatsızlıklarında destekleyici tedavi olarak uygulanan bütüncül yöntemler.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="text-center mt-5">
+                        <a href="#booking" class="btn btn-primary px-4 py-2">Tedavi İçin Randevu Alın</a>
                     </div>
                 </div>
             </section>
@@ -246,7 +491,11 @@
                     <div class="row">
 
                         <div class="col-12">
-                            <h2 class="text-center mb-lg-5 mb-4">Hasta Değerlendirmeleri</h2>
+                            <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+                                <p class="d-inline-block border rounded-pill py-1 px-4">Referanslar</p>
+                                <h2 class="mb-3">Hasta Değerlendirmeleri</h2>
+                                <p class="text-muted">Türkiye, Rusya, Almanya, ABD ve daha pek çok ülkeden hastalarımızın deneyimleri.</p>
+                            </div>
 
                             <div class="owl-carousel reviews-carousel">
 
@@ -480,11 +729,12 @@
             <section class="section-padding" id="booking">
                 <div class="container">
                     <div class="row">
-                    
+
                         <div class="col-lg-8 col-12 mx-auto">
                             <div class="booking-form">
-                                
+
                                 <h2 class="text-center mb-lg-3 mb-2">Randevu Al</h2>
+                                <p class="text-center text-muted mb-4">Formu doldurun, talebiniz WhatsApp üzerinden tarafımıza iletilsin. En kısa sürede sizinle iletişime geçelim.</p>
                             
                                 <form role="form" id="appointmentForm" onsubmit="sendToWhatsApp(event)">
                                     <div class="row">
@@ -570,29 +820,34 @@
                         </ul>
                     </div>
 
-                    <div class="col-lg-2 col-md-6 col-12 my-4 my-lg-0">
+                    <div class="col-lg-3 col-md-6 col-12 my-4 my-lg-0">
                         <h5 class="mb-lg-4 mb-3">Kliniğimiz</h5>
 
-                        <p><a href="mailto:hello@company.co">hello@company.co</a><p>
+                        <p class="mb-2"><i class="bi-telephone me-2"></i><a href="tel:+905343646683">+90 (534) 364 66 83</a></p>
+                        <p class="mb-2"><i class="bi-whatsapp me-2"></i><a href="https://wa.me/905343646683" target="_blank">WhatsApp ile yaz</a></p>
 
-                        <p>Mahmutlar Vatan Cd toros 2 residance no:5/c, Mahmutlar, Vatan Cd toros 2 residance no:5/c-b D:b, 07450 Alanya/Antalya</p>
+                        <p class="mb-0"><i class="bi-geo-alt me-2"></i>Mahmutlar, Vatan Cd. Toros 2 Residence No: 5/C-b D:b, 07450 Alanya / Antalya</p>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 col-12 ms-auto">
-                        <h5 class="mb-lg-4 mb-3">Sosyal Medya Hesaplarımız</h5>
+                    <div class="col-lg-2 col-md-6 col-12 ms-auto">
+                        <h5 class="mb-lg-4 mb-3">Sosyal Medya</h5>
 
                         <ul class="social-icon">
-                            <li><a href="#" class="social-icon-link bi-instagram"></a></li>
+                            <li><a href="#" class="social-icon-link bi-instagram" aria-label="Instagram"></a></li>
                         </ul>
                     </div>
 
-                    <div class="col-lg-3 col-12 ms-auto mt-4 mt-lg-0">
-                        <p class="copyright-text">Tüm Hakları Saklıdır. © Metin Demir 2025 
+                    <div class="col-lg-12 col-12 mt-4 text-center">
+                        <p class="copyright-text mb-0">Tüm Hakları Saklıdır. © Dr. Metin Demir 2026</p>
                     </div>
 
                 </div>
             </div>
         </footer>
+
+        <a href="https://wa.me/905343646683" class="whatsapp-float" target="_blank" aria-label="WhatsApp ile iletişim">
+            <i class="bi-whatsapp"></i>
+        </a>
 
         <!-- JAVASCRIPT FILES -->
         <script src="js/jquery.min.js"></script>
