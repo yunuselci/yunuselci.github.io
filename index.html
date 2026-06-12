@@ -89,6 +89,9 @@ body{
     border-radius:14px;
     font-weight:600;
     transition:.3s;
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
 }
 
 .btn-primary{
@@ -109,6 +112,35 @@ body{
 
 .btn-secondary:hover{
     transform:translateY(-3px);
+}
+
+.download-buttons{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    flex-wrap:wrap;
+    margin-top:25px;
+}
+
+.download-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:12px 20px;
+    border-radius:12px;
+    font-weight:600;
+    font-size:0.95rem;
+    text-decoration:none;
+    transition:.3s;
+    background:white;
+    color:var(--primary);
+    border:2px solid var(--primary);
+}
+
+.download-btn:hover{
+    transform:translateY(-2px);
+    background:var(--primary);
+    color:white;
 }
 
 .section{
@@ -224,6 +256,15 @@ html{
             <div class="buttons">
                 <a href="#" class="btn btn-primary">📱 Uygulamayı İndir</a>
                 <a href="#privacy" class="btn btn-secondary">🔒 Gizlilik Politikası</a>
+            </div>
+
+            <div class="download-buttons">
+                <a href="https://play.google.com/store/apps/details?id=com.yunuselci.KibleBulucu" class="download-btn" target="_blank">
+                    🔷 Google Play
+                </a>
+                <a href="https://apps.apple.com/tr/app/reklams%C4%B1z-k%C4%B1ble-bulucu/id6746551056" class="download-btn" target="_blank">
+                    🍎 App Store
+                </a>
             </div>
         </div>
     </div>
