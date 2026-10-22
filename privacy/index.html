@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gizlilik Politikası — Reklamsız Kıble Bulucu</title>
+<meta name="description" content="Reklamsız Kıble Bulucu (iOS ve Android) gizlilik politikası. Privacy policy of Reklamsız Kıble Bulucu for iOS and Android.">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --primary:#0f766e;
+    --primary-soft:#ccfbf1;
+    --dark:#0f172a;
+    --text:#334155;
+    --muted:#64748b;
+    --line:#e2e8f0;
+    --light:#f8fafc;
+    --white:#ffffff;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:var(--light);
+    color:var(--text);
+    line-height:1.7;
+}
+
+.container{
+    width:min(820px,100% - 32px);
+    margin:auto;
+}
+
+.topbar{
+    position:sticky;
+    top:0;
+    z-index:10;
+    background:rgba(248,250,252,.92);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+}
+
+.topbar .container{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+    padding:12px 0;
+}
+
+.home-link{
+    color:var(--dark);
+    font-weight:700;
+    text-decoration:none;
+}
+
+.lang-switch{
+    display:inline-flex;
+    padding:3px;
+    border-radius:999px;
+    background:var(--white);
+    border:1px solid var(--line);
+}
+
+.lang-switch a{
+    padding:4px 12px;
+    border-radius:999px;
+    color:var(--muted);
+    font-size:.85rem;
+    font-weight:600;
+    text-decoration:none;
+}
+
+.lang-switch a[aria-current="true"]{
+    background:var(--primary);
+    color:var(--white);
+}
+
+.policy{
+    padding:48px 0 72px;
+}
+
+.policy + .policy{
+    border-top:1px solid var(--line);
+}
+
+.policy header{
+    margin-bottom:28px;
+}
+
+.policy h1{
+    font-size:clamp(2rem,5vw,2.75rem);
+    line-height:1.15;
+    color:var(--dark);
+    font-weight:800;
+    margin-bottom:8px;
+}
+
+.meta{
+    color:var(--muted);
+}
+
+.summary{
+    background:var(--white);
+    border:1px solid var(--line);
+    border-left:4px solid var(--primary);
+    border-radius:16px;
+    padding:20px 24px;
+    margin-bottom:12px;
+}
+
+.policy .summary h2{
+    margin-top:0;
+}
+
+.policy h2{
+    font-size:1.25rem;
+    color:var(--dark);
+    margin:36px 0 10px;
+}
+
+.policy p,
+.policy ul{
+    margin-bottom:12px;
+}
+
+.policy ul{
+    padding-left:22px;
+}
+
+.policy li{
+    margin-bottom:6px;
+}
+
+.policy li ul{
+    margin:6px 0 0;
+}
+
+.policy strong{
+    color:var(--dark);
+}
+
+.policy a{
+    color:var(--primary);
+}
+
+.table-wrap{
+    overflow-x:auto;
+    margin-bottom:12px;
+    border:1px solid var(--line);
+    border-radius:14px;
+    background:var(--white);
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    font-size:.95rem;
+}
+
+th,
+td{
+    text-align:left;
+    vertical-align:top;
+    padding:12px 14px;
+    border-bottom:1px solid var(--line);
+}
+
+th{
+    color:var(--dark);
+    background:var(--light);
+    font-weight:600;
+    white-space:nowrap;
+}
+
+tr:last-child td{
+    border-bottom:none;
+}
+
+.footer{
+    background:var(--dark);
+    color:var(--white);
+    text-align:center;
+    padding:32px 16px;
+}
+
+.footer a{
+    color:var(--white);
+}
+
+@media (max-width:600px){
+    table,
+    thead,
+    tbody,
+    tr,
+    th,
+    td{
+        display:block;
+    }
+
+    thead{
+        display:none;
+    }
+
+    tr{
+        padding:10px 14px;
+        border-bottom:1px solid var(--line);
+    }
+
+    tr:last-child{
+        border-bottom:none;
+    }
+
+    td{
+        padding:2px 0;
+        border:none;
+    }
+
+    td:first-child{
+        font-weight:600;
+        color:var(--dark);
+    }
+
+    td[data-label]::before{
+        content:attr(data-label) ": ";
+        color:var(--muted);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav class="topbar">
+    <div class="container">
+        <a class="home-link" href="../">← KibleBulucu</a>
+        <div class="lang-switch" role="group" aria-label="Dil / Language">
+            <a href="?lang=tr" data-lang="tr" hreflang="tr">TR</a>
+            <a href="?lang=en" data-lang="en" hreflang="en">EN</a>
+        </div>
+    </div>
+</nav>
+
+<main>
+
+<!-- ============================== TÜRKÇE ============================== -->
+<article class="policy" lang="tr" id="tr">
+    <div class="container">
+
+        <header>
+            <h1>Gizlilik Politikası</h1>
+            <p class="meta">Reklamsız Kıble Bulucu (iOS ve Android) · Son güncelleme: 22 Ekim 2026</p>
+        </header>
+
+        <section class="summary">
+            <h2>Kısaca</h2>
+            <ul>
+                <li>Hesap açmanız gerekmez. Reklam, analiz aracı veya kullanıcı takibi yoktur.</li>
+                <li>Kıble yönü tamamen cihazınızda hesaplanır.</li>
+                <li>Ezan vakitleri, Kur'an içeriği ve abonelik doğrulaması için gereken bazı veriler aşağıda adı geçen hizmetlere gönderilir. Bu hizmetlere adınız, e-posta adresiniz veya hesap bilgileriniz iletilmez.</li>
+                <li>Ayarlarınız ve tercihleriniz yalnızca cihazınızda saklanır. Geliştiricinin bu verileri topladığı bir sunucu yoktur.</li>
+            </ul>
+        </section>
+
+        <h2>1. Kapsam ve veri sorumlusu</h2>
+        <p>Bu politika, App Store ve Google Play'de yayımlanan Reklamsız Kıble Bulucu uygulamasını ("Uygulama") ve ana ekran widget'larını kapsar. Uygulama, bağımsız geliştirici Yunus Elçi tarafından geliştirilir ve yayımlanır. Sorularınız için: <a href="mailto:mryunuselci@gmail.com">mryunuselci@gmail.com</a></p>
+
+        <h2>2. Konum bilgisi</h2>
+        <p>Uygulama konumunuzu yalnızca izin verirseniz ve yalnızca uygulama açıkken kullanır. Arka planda konum alınmaz.</p>
+        <ul>
+            <li><strong>Kıble yönü:</strong> Konumunuz ve pusula verisi kıble yönünü hesaplamak için cihazınızda işlenir, hiçbir sunucuya gönderilmez.</li>
+            <li><strong>Otomatik ezan vakitleri:</strong> Bulunduğunuz yerin vakitlerini hesaplamak için koordinatlarınız (enlem ve boylam) Aladhan hizmetine gönderilir.</li>
+            <li><strong>Konum adı:</strong> Ekranda şehir ve ilçe adını gösterebilmek için koordinatlarınız işletim sisteminin adres çözümleme hizmetine (iPhone'da Apple, Android'de Google) gönderilir.</li>
+            <li><strong>Manuel konum:</strong> Konum izni vermeden listeden ülke, şehir ve ilçe seçebilirsiniz. Bu durumda yalnızca seçtiğiniz yerin kimliği, Diyanet vakitlerini almak için Ezan Vakti API hizmetine gönderilir.</li>
+            <li><strong>Ek şehirler:</strong> Takibe eklediğiniz şehirlerin vakitleri de aynı hizmetlerden alınır.</li>
+        </ul>
+        <p>Konum iznini cihaz ayarlarından istediğiniz zaman kapatabilir, uygulamayı manuel konumla kullanmaya devam edebilirsiniz.</p>
+
+        <h2>3. Kur'an-ı Kerim</h2>
+        <p>Sure ve ayet metinleri, mealler ve ses kayıtları Quran Foundation hizmetinden alınır; ses kayıtları bu hizmetin sağladığı adreslerden oynatılır. Bu isteklerde yalnızca hangi içeriğin istendiği (ör. sure numarası, meal veya kâri seçimi) iletilir. Kaldığınız yer ve okuma tercihleriniz cihazınızda saklanır.</p>
+
+        <h2>4. Destek Ol abonelikleri</h2>
+        <p>Destek Ol abonelikleri isteğe bağlıdır. Uygulamanın temel özellikleri herkes için ücretsizdir.</p>
+        <ul>
+            <li><strong>Ödeme:</strong> Tüm ödemeler Apple (App Store) veya Google (Google Play) tarafından işlenir. Kart ve ödeme bilgileriniz geliştiriciye ulaşmaz.</li>
+            <li><strong>Abonelik doğrulama:</strong> Aboneliğinizin aktif olup olmadığını doğrulamak için RevenueCat, Inc. hizmeti kullanılır. RevenueCat'e şu bilgiler iletilir:
+                <ul>
+                    <li>Uygulamanın oluşturduğu rastgele ve anonim bir kullanıcı kimliği</li>
+                    <li>Mağazanın sağladığı satın alma kayıtları (ürün, satın alma ve yenileme tarihleri, abonelik durumu)</li>
+                    <li>Cihaz modeli, işletim sistemi ve uygulama sürümü, dil tercihi ve mağaza ülkesi</li>
+                    <li>iPhone'da, Apple'ın her geliştiriciye ayrı verdiği cihaz tanımlayıcısı (IDFV)</li>
+                </ul>
+            </li>
+            <li>Adınız, e-posta adresiniz, Apple veya Google hesap bilgileriniz ve ödeme bilgileriniz RevenueCat ile paylaşılmaz. Bu bilgiler reklam veya takip amacıyla kullanılmaz.</li>
+        </ul>
+
+        <h2>5. Bildirimler</h2>
+        <p>Ezan vakti hatırlatmaları cihazınızda zamanlanan yerel bildirimlerdir, herhangi bir sunucu üzerinden gönderilmez. Bildirim iznini istediğiniz zaman kapatabilirsiniz.</p>
+
+        <h2>6. Cihazınızda saklanan veriler</h2>
+        <p>Seçtiğiniz konum ve şehirler, alınan ezan vakitleri, bildirim ayarları, tema seçimi, zikirmatik sayıları ve Kur'an'da kaldığınız yer yalnızca cihazınızda (widget'larla paylaşılan uygulama alanı dahil) saklanır ve geliştiriciye gönderilmez. Cihaz yedeklemesi (iCloud veya Google yedeklemesi) açıksa bu veriler işletim sisteminizin yedeğine dahil edilebilir.</p>
+
+        <h2>7. Toplamadığımız veriler</h2>
+        <ul>
+            <li>Hesap, ad, e-posta veya telefon numarası</li>
+            <li>Reklam kimliği (IDFA/AAID); uygulamada reklam, analiz veya çökme raporlama aracı yoktur</li>
+            <li>Kişiler, fotoğraflar, kamera veya mikrofon</li>
+            <li>Diğer uygulamalar ve web siteleri arasında takip (tracking)</li>
+        </ul>
+        <p>Verilerinizi satmıyor, reklam amacıyla kimseyle paylaşmıyoruz.</p>
+
+        <h2>8. Kullanılan üçüncü taraf hizmetler</h2>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr><th>Hizmet</th><th>Ne için</th><th>Gönderilen veri</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><a href="https://aladhan.com" rel="noopener">Aladhan</a></td><td data-label="Ne için">Otomatik konumla ezan vakitleri</td><td data-label="Gönderilen veri">Enlem, boylam, tarih aralığı</td></tr>
+                    <tr><td>Ezan Vakti API (ezanvakti.emushaf.net)</td><td data-label="Ne için">Manuel konumda Diyanet vakitleri ve ülke/şehir/ilçe listeleri</td><td data-label="Gönderilen veri">Seçilen ülke, şehir veya ilçenin kimliği</td></tr>
+                    <tr><td>Apple / Google konum hizmetleri</td><td data-label="Ne için">Koordinattan şehir ve ilçe adını bulma</td><td data-label="Gönderilen veri">Enlem, boylam</td></tr>
+                    <tr><td><a href="https://quran.foundation" rel="noopener">Quran Foundation</a></td><td data-label="Ne için">Kur'an metni, mealler ve ses kayıtları</td><td data-label="Gönderilen veri">İstenen içerik (sure, meal, kâri)</td></tr>
+                    <tr><td><a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCat</a></td><td data-label="Ne için">Abonelik doğrulama</td><td data-label="Gönderilen veri">Bkz. Bölüm 4</td></tr>
+                    <tr><td>Apple App Store / Google Play</td><td data-label="Ne için">Ödeme ve abonelik yönetimi</td><td data-label="Gönderilen veri">Mağaza hesabınız üzerinden, ilgili mağazanın politikasına göre</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p>İnternete bağlanan her uygulamada olduğu gibi, bu hizmetler bağlantı sırasında IP adresinizi ve temel bağlantı bilgilerini görebilir. Her hizmet bu bilgileri kendi gizlilik politikasına göre işler ve sunucuları Türkiye dışında (ör. ABD veya AB) bulunabilir. Apple ve Google'ın politikaları: <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple</a>, <a href="https://policies.google.com/privacy" rel="noopener">Google</a>.</p>
+
+        <h2>9. Saklama süresi</h2>
+        <ul>
+            <li>Cihazdaki veriler, siz silene veya uygulamayı kaldırana kadar cihazınızda kalır.</li>
+            <li>Geliştiricinin kişisel veri sakladığı bir sunucusu yoktur.</li>
+            <li>RevenueCat, abonelik kayıtlarını aboneliği doğrulamak ve yasal yükümlülükleri yerine getirmek için gerekli olduğu sürece saklar.</li>
+        </ul>
+
+        <h2>10. Haklarınız</h2>
+        <p>6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve geçerli olduğu yerlerde Avrupa Birliği Genel Veri Koruma Tüzüğü (GDPR) kapsamında; verilerinizin işlenip işlenmediğini öğrenme, bilgi talep etme, düzeltilmesini veya silinmesini isteme ve işlenmesine itiraz etme haklarına sahipsiniz.</p>
+        <ul>
+            <li>Konum ve bildirim izinlerini cihaz ayarlarından istediğiniz zaman kapatabilirsiniz.</li>
+            <li>Uygulamayı kaldırdığınızda cihazdaki tüm uygulama verileri silinir.</li>
+            <li>Aboneliğinizi App Store veya Google Play hesap ayarlarından yönetebilir ve iptal edebilirsiniz.</li>
+            <li>RevenueCat'teki abonelik kaydınızın silinmesi için <a href="mailto:mryunuselci@gmail.com">mryunuselci@gmail.com</a> adresine yazabilirsiniz. Kayıt anonim olduğundan, bulabilmemiz için mağazanın gönderdiği satın alma makbuzundaki sipariş numarasını (Order ID) iletmeniz gerekebilir.</li>
+        </ul>
+
+        <h2>11. Çocuklar</h2>
+        <p>Uygulama genel kullanıcı kitlesine yöneliktir. Çocuklardan bilerek kişisel veri toplamayız; uygulama zaten hesap veya kimlik bilgisi istemez.</p>
+
+        <h2>12. Güvenlik</h2>
+        <p>Uygulamanın kurduğu tüm bağlantılar şifrelidir (HTTPS).</p>
+
+        <h2>13. Değişiklikler</h2>
+        <p>Bu politikayı uygulama değiştikçe güncelleyebiliriz. Güncel sürüm her zaman bu sayfada, son güncelleme tarihiyle yayımlanır. Önemli değişiklikleri uygulamanın sürüm notlarında da belirtiriz.</p>
+
+        <h2>14. İletişim</h2>
+        <p>Bu politika veya verileriniz hakkındaki sorularınız için: <a href="mailto:mryunuselci@gmail.com">mryunuselci@gmail.com</a></p>
+
+    </div>
+</article>
+
+<!-- ============================== ENGLISH ============================== -->
+<article class="policy" lang="en" id="en">
+    <div class="container">
+
+        <header>
+            <h1>Privacy Policy</h1>
+            <p class="meta">Reklamsız Kıble Bulucu (iOS and Android) · Last updated: October 22, 2026</p>
+        </header>
+
+        <section class="summary">
+            <h2>At a glance</h2>
+            <ul>
+                <li>No account is needed. There are no ads, no analytics tools and no user tracking.</li>
+                <li>The Qibla direction is calculated entirely on your device.</li>
+                <li>Some data needed for prayer times, Quran content and subscription verification is sent to the services listed below. Your name, email address or account details are never sent to them.</li>
+                <li>Your settings and preferences are stored only on your device. The developer does not operate a server that collects this data.</li>
+            </ul>
+        </section>
+
+        <h2>1. Scope and data controller</h2>
+        <p>This policy covers the Reklamsız Kıble Bulucu app (the "App") published on the App Store and Google Play, including its home screen widgets. The App is developed and published by independent developer Yunus Elçi. Questions: <a href="mailto:mryunuselci@gmail.com">mryunuselci@gmail.com</a></p>
+
+        <h2>2. Location</h2>
+        <p>The App uses your location only if you allow it, and only while the App is in use. Location is never collected in the background.</p>
+        <ul>
+            <li><strong>Qibla direction:</strong> Your location and compass data are processed on your device to calculate the Qibla direction and are never sent to a server.</li>
+            <li><strong>Automatic prayer times:</strong> To calculate prayer times for where you are, your coordinates (latitude and longitude) are sent to the Aladhan service.</li>
+            <li><strong>Place name:</strong> To show your city and district name, your coordinates are sent to the operating system's geocoding service (Apple on iPhone, Google on Android).</li>
+            <li><strong>Manual location:</strong> You can pick a country, city and district from a list without granting location permission. In that case only the identifier of the place you picked is sent to the Ezan Vakti API service to fetch Diyanet prayer times.</li>
+            <li><strong>Additional cities:</strong> Prayer times for cities you add are fetched from the same services.</li>
+        </ul>
+        <p>You can turn off location permission at any time in your device settings and keep using the App with a manual location.</p>
+
+        <h2>3. The Holy Quran</h2>
+        <p>Surah and verse texts, translations and audio recitations are fetched from the Quran Foundation service, and audio is played from addresses provided by that service. These requests only include which content is requested (e.g. surah number, translation or reciter). Your reading position and preferences are stored on your device.</p>
+
+        <h2>4. Support subscriptions</h2>
+        <p>Support ("Destek Ol") subscriptions are optional. The App's core features are free for everyone.</p>
+        <ul>
+            <li><strong>Payment:</strong> All payments are processed by Apple (App Store) or Google (Google Play). Your card and payment details never reach the developer.</li>
+            <li><strong>Subscription verification:</strong> RevenueCat, Inc. is used to verify whether your subscription is active. The following is sent to RevenueCat:
+                <ul>
+                    <li>A random, anonymous user ID generated by the App</li>
+                    <li>Purchase records provided by the store (product, purchase and renewal dates, subscription status)</li>
+                    <li>Device model, operating system and app version, preferred language and store country</li>
+                    <li>On iPhone, the device identifier Apple assigns separately to each developer (IDFV)</li>
+                </ul>
+            </li>
+            <li>Your name, email address, Apple or Google account details and payment details are not shared with RevenueCat. This information is not used for advertising or tracking.</li>
+        </ul>
+
+        <h2>5. Notifications</h2>
+        <p>Prayer time reminders are local notifications scheduled on your device; they are not sent through any server. You can turn off notification permission at any time.</p>
+
+        <h2>6. Data stored on your device</h2>
+        <p>Your selected location and cities, fetched prayer times, notification settings, theme choice, dhikr counter values and Quran reading position are stored only on your device (including the app area shared with widgets) and are not sent to the developer. If device backup (iCloud or Google backup) is enabled, this data may be included in your operating system's backup.</p>
+
+        <h2>7. What we do not collect</h2>
+        <ul>
+            <li>Accounts, names, email addresses or phone numbers</li>
+            <li>Advertising identifiers (IDFA/AAID); the App contains no advertising, analytics or crash reporting tools</li>
+            <li>Contacts, photos, camera or microphone</li>
+            <li>Tracking across other apps and websites</li>
+        </ul>
+        <p>We do not sell your data or share it with anyone for advertising.</p>
+
+        <h2>8. Third-party services</h2>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr><th>Service</th><th>Purpose</th><th>Data sent</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><a href="https://aladhan.com" rel="noopener">Aladhan</a></td><td data-label="Purpose">Prayer times for automatic location</td><td data-label="Data sent">Latitude, longitude, date range</td></tr>
+                    <tr><td>Ezan Vakti API (ezanvakti.emushaf.net)</td><td data-label="Purpose">Diyanet prayer times and country/city/district lists for manual location</td><td data-label="Data sent">Identifier of the selected country, city or district</td></tr>
+                    <tr><td>Apple / Google location services</td><td data-label="Purpose">Finding the city and district name for coordinates</td><td data-label="Data sent">Latitude, longitude</td></tr>
+                    <tr><td><a href="https://quran.foundation" rel="noopener">Quran Foundation</a></td><td data-label="Purpose">Quran text, translations and audio</td><td data-label="Data sent">Requested content (surah, translation, reciter)</td></tr>
+                    <tr><td><a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCat</a></td><td data-label="Purpose">Subscription verification</td><td data-label="Data sent">See Section 4</td></tr>
+                    <tr><td>Apple App Store / Google Play</td><td data-label="Purpose">Payments and subscription management</td><td data-label="Data sent">Through your store account, under that store's policy</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p>As with any app that connects to the internet, these services can see your IP address and basic connection information while connected. Each service processes this information under its own privacy policy, and their servers may be located outside Türkiye (e.g. in the US or EU). Apple's and Google's policies: <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple</a>, <a href="https://policies.google.com/privacy" rel="noopener">Google</a>.</p>
+
+        <h2>9. Retention</h2>
+        <ul>
+            <li>Data on your device stays there until you delete it or uninstall the App.</li>
+            <li>The developer has no server that stores personal data.</li>
+            <li>RevenueCat keeps subscription records for as long as needed to verify subscriptions and meet legal obligations.</li>
+        </ul>
+
+        <h2>10. Your rights</h2>
+        <p>Under the Turkish Personal Data Protection Law No. 6698 (KVKK) and, where applicable, the EU General Data Protection Regulation (GDPR), you have the right to learn whether your data is processed, request information, ask for it to be corrected or deleted, and object to its processing.</p>
+        <ul>
+            <li>You can turn off location and notification permissions at any time in your device settings.</li>
+            <li>Uninstalling the App deletes all of its data from your device.</li>
+            <li>You can manage and cancel your subscription in your App Store or Google Play account settings.</li>
+            <li>To have your subscription record at RevenueCat deleted, email <a href="mailto:mryunuselci@gmail.com">mryunuselci@gmail.com</a>. Because the record is anonymous, you may need to send the order number (Order ID) from the store's purchase receipt so we can find it.</li>
+        </ul>
+
+        <h2>11. Children</h2>
+        <p>The App is intended for a general audience. We do not knowingly collect personal data from children, and the App does not ask for any account or identity information.</p>
+
+        <h2>12. Security</h2>
+        <p>All connections made by the App are encrypted (HTTPS).</p>
+
+        <h2>13. Changes</h2>
+        <p>We may update this policy as the App changes. The current version is always published on this page with its last updated date. Significant changes are also noted in the App's release notes.</p>
+
+        <h2>14. Contact</h2>
+        <p>For questions about this policy or your data: <a href="mailto:mryunuselci@gmail.com">mryunuselci@gmail.com</a></p>
+
+    </div>
+</article>
+
+</main>
+
+<footer class="footer">
+    <p><a href="../">KibleBulucu</a> · <a href="mailto:mryunuselci@gmail.com">mryunuselci@gmail.com</a></p>
+</footer>
+
+<script>
+// JavaScript yoksa iki dil de alt alta görünür; varsa yalnızca seçili dil gösterilir.
+(function () {
+    var titles = {
+        tr: 'Gizlilik Politikası — Reklamsız Kıble Bulucu',
+        en: 'Privacy Policy — Reklamsız Kıble Bulucu'
+    };
+
+    function initialLang() {
+        var param = new URLSearchParams(location.search).get('lang');
+        if (param === 'tr' || param === 'en') return param;
+        if (location.hash === '#tr' || location.hash === '#en') return location.hash.slice(1);
+        return (navigator.language || 'tr').toLowerCase().indexOf('tr') === 0 ? 'tr' : 'en';
+    }
+
+    function setLang(lang, updateURL) {
+        document.querySelectorAll('article.policy').forEach(function (article) {
+            article.hidden = article.lang !== lang;
+        });
+        document.querySelectorAll('.lang-switch a').forEach(function (link) {
+            link.setAttribute('aria-current', link.dataset.lang === lang ? 'true' : 'false');
+        });
+        document.documentElement.lang = lang;
+        document.title = titles[lang];
+        if (updateURL) history.replaceState(null, '', '?lang=' + lang);
+    }
+
+    document.querySelectorAll('.lang-switch a').forEach(function (link) {
+        link.addEventListener('click', function (event) {
+            event.preventDefault();
+            setLang(link.dataset.lang, true);
+            window.scrollTo(0, 0);
+        });
+    });
+
+    setLang(initialLang(), false);
+})();
+</script>
+
+</body>
+</html>
